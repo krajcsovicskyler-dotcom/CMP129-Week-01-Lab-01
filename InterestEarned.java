@@ -13,7 +13,8 @@ public class InterestEarned {
         ir = input.nextDouble();
         System.out.println("How many times is the interest compounded during the year?");
         c = input.nextDouble();
-        double FA =p*Mth.pow(1+ir/c, c)
+        double FA =p*Math.pow(1+ir/c, c);
         double IE = FA-p;
+        System.out.println("Interest rate:   " + ir + "\nTimes compounded:   " + c + "\nPrincipal amount:   " + p + "\nInterest earned:   " + IE + "\nFinal amount:   " + FA);
     }//ends main
 }//ends class
